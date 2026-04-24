@@ -26,7 +26,7 @@ A Java-based web application for managing student records using JSP, Servlets, a
 2. Configure Apache Tomcat (v9)
 3. Right-click project → Run on Server
 4. Open browser:
-   http://localhost:8080/StudentRecordManager
+   http://localhost:8080/StudentRecordManager/layout
 
 ## Database
 
