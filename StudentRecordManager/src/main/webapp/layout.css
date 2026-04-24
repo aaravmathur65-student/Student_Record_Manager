@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#layout {
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-areas: "heading heading" "sidebar content";
+  overflow: hidden;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+#heading {
+  grid-area: heading;
+  border: solid;
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-auto-rows: minmax(140px, 1fr);
+  list-style: none;
+  overflow-y: auto;
+  min-height: 0;
+  padding: 0;
+  height: 100%;
+}
+.sidebar {
+  overflow-y: auto;
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE / old Edge */
+  -ms-overflow-style: none;
+}
+
+/* Chrome / Safari */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar_nav {
+  border: solid;
+  border-bottom: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.sidebar a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  transition: font-size 0.3s ease;
+}
+
+.sidebar a:hover {
+  font-size: larger;
+}
+
+.message {
+  text-align: center;
+  color: #92400e;
+  background: #e5e7eb;
+  border: 1px solid #9ca3af;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+#content {
+  position: relative;
+  grid-area: content;
+  padding: 1.4rem;
+  min-height: 0;
+  overflow: hidden;
+}
+#logout_container {
+  display: none;
+}
+#logout_container.active {
+  display: grid;
+  place-items: center;
+  z-index:11;
+  background: rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(0.75px);
+  position: absolute;
+  inset: 0;
+}
+#logout_box {
+  border: 1px solid;
+  padding: 1.8rem 1.2rem;
+  border-radius: 16px;
+  background-color: #d0cdcb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+}
+#logout_box p {
+  font-size: 1.05rem;
+  color: #353030;
+}
+#btn_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.layout_btn {
+  border-radius: 8px !important; 
+  padding: 0.5rem 1rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  background-color: rgb(235, 245, 254) !important;
+  width:auto;
+  height: auto;
+}

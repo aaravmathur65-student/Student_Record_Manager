@@ -1,0 +1,9 @@
+2026-03-18 22:16:29.904669+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSE" not found (this database is empty); SQL statement:
+INSERT INTO course (course_id, course_name, course_duration) VALUES (?, ?, ?) [42104-240]
+2026-03-18 22:21:09.699248+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSE" not found (this database is empty); SQL statement:
+SELECT * FROM course [42104-240]
+2026-03-18 22:22:01.545265+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSE" not found (this database is empty); SQL statement:
+SELECT * FROM course [42104-240]
