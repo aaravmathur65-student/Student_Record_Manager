@@ -38,3 +38,4 @@ A Java-based web application for managing student records using JSP, Servlets, a
 * This is a beginner-level college project
 * Designed for learning Java web development
 * Only for Desktop View
+* For LOGIN PAGE , USER NAME = "teacher.anna@school.com"  , PASS= "anna@2024"
