@@ -1,6 +1,3 @@
-# Student_Record_Manager
-A project for java subject
-
 # Student Record Manager
 
 A Java-based web application for managing student records using JSP, Servlets, and H2 Database.
